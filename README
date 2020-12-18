@@ -1,0 +1,21 @@
+How to run Telnet client/server
+===========================
+
+Compile the codes in two diffrent terminals
+for compilation 
+terminal 1==> gcc server.c -o server
+terminal 2==> gcc client.c -o client
+
+Run the server as:
+
+==>./server
+    
+Once you run the server it asks you the secret key which is single character key you need to enter for encrypt your messages, and then server will wait for client request if any request arrives server will ask you to accept that client or disconnect.
+
+It requires port 12000 to be open (You can change the porn number from mt.h file).
+
+To run clients, run
+
+==>./client 127.0.0.1
+    
+once you run the client it asks you the secret key which is single character key you need to enter for encrypt your messages between server & client
